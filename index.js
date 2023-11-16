@@ -6,4 +6,4 @@ const tg = window.Telegram.WebApp;
 tg.expand();
 
 groupIdText.innerHTML = JSON.stringify(tg.initDataUnsafe.user);
-groupUsernameText.innerText = JSON.stringify(tg.initDataUnsafe.group);
+groupUsernameText.innerText = JSON.stringify(tg.initDataUnsafe.chat);
