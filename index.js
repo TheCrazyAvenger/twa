@@ -1,4 +1,4 @@
-const groupNameText = document.getElementById('group_name');
+const groupDataText = document.getElementById('group_data');
 const groupIdText = document.getElementById('group_id');
 const groupUsernameText = document.getElementById('group_username');
 
@@ -7,3 +7,4 @@ tg.expand();
 
 groupIdText.innerHTML = JSON.stringify(tg.initDataUnsafe.user);
 groupUsernameText.innerHTML = JSON.stringify(tg.initDataUnsafe.chat);
+groupDataText.innerHTML = JSON.stringify(tg);
