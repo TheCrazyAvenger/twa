@@ -9,4 +9,4 @@ tg.expand();
 // groupNameText.textContent = `${tg.initDataUnsafe.chat.title}`;
 
 groupIdText.innerHTML = JSON.stringify(window.Telegram.WebApp);
-groupUsernameText.innerText = `${tg.initDataUnsafe.user.last_name}`;
+// groupUsernameText.innerText = `${tg.initDataUnsafe.user.last_name}`;
