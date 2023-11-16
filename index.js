@@ -3,9 +3,10 @@ const groupIdText = document.getElementById('group_id');
 const groupUsernameText = document.getElementById('group_username');
 
 const tg = window.Telegram.WebApp;
+console.log(window.Telegram.WebApp);
 tg.expand();
 
 // groupNameText.textContent = `${tg.initDataUnsafe.chat.title}`;
 
-groupNameText.innerText = `${tg.initDataUnsafe.user.first_name}`;
+groupIdText.innerHTML = JSON.stringify(window.Telegram.WebApp);
 groupUsernameText.innerText = `${tg.initDataUnsafe.user.last_name}`;
