@@ -5,6 +5,7 @@ const groupUsernameText = document.getElementById('group_username');
 const tg = window.Telegram.WebApp;
 console.log(window.Telegram.WebApp);
 tg.expand();
+console.log(tg);
 
 // groupNameText.textContent = `${tg.initDataUnsafe.chat.title}`;
 
