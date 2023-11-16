@@ -2,10 +2,10 @@ const groupNameText = document.getElementById('group_name');
 const groupIdText = document.getElementById('group_id');
 const groupUsernameText = document.getElementById('group_username');
 
-groupNameText.textContent = JSON.stringify(
-  window.Telegram.WebApp.initDataUnsafe
-);
+const tg = window.Telegram.WebApp;
+tg.expand();
 
-groupNameText.textContent = ' ' + window.Telegram.WebApp.initDataUnsafe.chat.id;
-groupUsernameText.textContent =
-  ' ' + window.Telegram.WebApp.initDataUnsafe.chat.username;
+groupNameText.textContent = `${tg.initDataUnsafe.chat.title}`;
+
+groupNameText.textContent = `${tg.initDataUnsafe.chat.id}`;
+groupUsernameText.textContent = `${tg.initDataUnsafe.chat.username}`;
